@@ -1,0 +1,102 @@
+/* Background */
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+/* Form container (Card) */
+.form-container {
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+  width: 400px;
+  max-width: 90%;
+  text-align: left;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* Inputs & Select */
+input[type="text"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+}
+
+input:focus,
+select:focus {
+  border-color: #2575fc;
+  box-shadow: 0 0 5px rgba(37, 117, 252, 0.5);
+}
+
+/* Form group spacing */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Gender & Hobbies in one line */
+.gender-group,
+.hobbies-group {
+  display: flex;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+/* Error messages */
+.error {
+  color: red;
+  font-size: 13px;
+  margin-top: 3px;
+}
+
+/* Buttons */
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.submit-btn,
+.reset-btn {
+  width: 48%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn {
+  background: linear-gradient(45deg, #007bff, #00c6ff);
+  color: white;
+}
+
+.submit-btn:hover {
+  opacity: 0.9;
+}
+
+.reset-btn {
+  background: linear-gradient(45deg, #ff4b2b, #ff416c);
+  color: white;
+}
+
+.reset-btn:hover {
+  opacity: 0.9;
+}

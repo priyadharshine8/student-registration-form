@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="form-container">
+    <h2>Student Registration Form</h2>
+    <form id="regForm">
+      <!-- Name -->
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name">
+        <div class="error" id="nameError"></div>
+      </div>
+
+      <!-- Email -->
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="text" id="email" placeholder="Enter your email">
+        <div class="error" id="emailError"></div>
+      </div>
+
+      <!-- Password -->
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter password (min 8 chars)">
+        <div class="error" id="passwordError"></div>
+      </div>
+
+      <!-- Gender -->
+      <div class="form-group">
+        <label>Gender:</label>
+        <div class="gender-group">
+          <label><input type="radio" name="gender" value="Male"> Male</label>
+          <label><input type="radio" name="gender" value="Female"> Female</label>
+          <label><input type="radio" name="gender" value="Other"> Other</label>
+        </div>
+        <div class="error" id="genderError"></div>
+      </div>
+
+      <!-- Hobbies -->
+      <div class="form-group">
+        <label>Hobbies:</label>
+        <div class="hobbies-group">
+          <label><input type="checkbox" name="hobby" value="Reading"> Reading</label>
+          <label><input type="checkbox" name="hobby" value="Sports"> Sports</label>
+          <label><input type="checkbox" name="hobby" value="Music"> Music</label>
+          <label><input type="checkbox" name="hobby" value="Coding"> Coding</label>
+        </div>
+        <div class="error" id="hobbiesError"></div>
+      </div>
+
+      <!-- Course -->
+      <div class="form-group">
+        <label for="course">Course Selection:</label>
+        <select id="course">
+          <option value="">-- Select a Course --</option>
+          <option>B.Sc</option>
+          <option>B.Com</option>
+          <option>B.Tech</option>
+          <option>M.Sc</option>
+          <option>MBA</option>
+        </select>
+        <div class="error" id="courseError"></div>
+      </div>
+
+      <!-- Buttons -->
+      <div class="btn-container">
+        <button type="submit" class="submit-btn">Submit</button>
+        <button type="reset" class="reset-btn">Reset</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
